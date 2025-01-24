@@ -1,0 +1,2 @@
+类原生XiaomiDolby添加中文翻译
+安装包仅供Android15可用
