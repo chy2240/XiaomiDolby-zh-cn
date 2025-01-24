@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:title="@string/dolby_title"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:title="@string/dolby_enable"
+        android:key="dolby_enable"
+        android:defaultValue="true" />
+    <ListPreference
+        android:entries="@array/dolby_profile_entries"
+        android:title="@string/dolby_profile_title"
+        android:key="dolby_profile"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:entryValues="@array/dolby_profile_values" />
+    <PreferenceCategory
+        android:title="@string/dolby_category_settings">
+        <Preference
+            android:title="@string/dolby_preset"
+            android:key="dolby_preset">
+            <intent
+                android:targetPackage="co.aospa.dolby.xiaomi"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="co.aospa.dolby.xiaomi.geq.EqualizerActivity" />
+        </Preference>
+        <co.aospa.dolby.xiaomi.preference.DolbyIeqPreference
+            android:entries="@array/dolby_ieq_entries"
+            android:title="@string/dolby_ieq"
+            android:key="dolby_ieq"
+            android:entryValues="@array/dolby_ieq_values" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolby_spk_virtualizer"
+            android:key="dolby_spk_virtualizer" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolby_hp_virtualizer"
+            android:key="dolby_virtualizer" />
+        <ListPreference
+            android:entries="@array/dolby_stereo_entries"
+            android:title="@string/dolby_stereo_widening"
+            android:key="dolby_stereo"
+            android:dependency="dolby_virtualizer"
+            android:entryValues="@array/dolby_stereo_values" />
+        <ListPreference
+            android:entries="@array/dolby_dialogue_entries"
+            android:title="@string/dolby_dialogue_enhancer"
+            android:key="dolby_dialogue"
+            android:entryValues="@array/dolby_dialogue_values" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolby_bass_enhancer"
+            android:key="dolby_bass" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolby_volume_leveler"
+            android:key="dolby_volume" />
+        <Preference
+            android:title="@string/dolby_reset_profile"
+            android:key="dolby_reset" />
+    </PreferenceCategory>
+</PreferenceScreen>

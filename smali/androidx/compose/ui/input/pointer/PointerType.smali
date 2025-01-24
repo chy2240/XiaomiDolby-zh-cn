@@ -1,0 +1,208 @@
+.class public abstract Landroidx/compose/ui/input/pointer/PointerType;
+.super Ljava/lang/Object;
+.source "PointerEvent.kt"
+
+
+# static fields
+.field public static final Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
+
+.field private static final Eraser:I
+
+.field private static final Mouse:I
+
+.field private static final Stylus:I
+
+.field private static final Touch:I
+
+.field private static final Unknown:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Landroidx/compose/ui/input/pointer/PointerType$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Landroidx/compose/ui/input/pointer/PointerType$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
+
+    const/4 v0, 0x0
+
+    .line 240
+    invoke-static {v0}, Landroidx/compose/ui/input/pointer/PointerType;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/input/pointer/PointerType;->Unknown:I
+
+    const/4 v0, 0x1
+
+    .line 243
+    invoke-static {v0}, Landroidx/compose/ui/input/pointer/PointerType;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/input/pointer/PointerType;->Touch:I
+
+    const/4 v0, 0x2
+
+    .line 246
+    invoke-static {v0}, Landroidx/compose/ui/input/pointer/PointerType;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/input/pointer/PointerType;->Mouse:I
+
+    const/4 v0, 0x3
+
+    .line 249
+    invoke-static {v0}, Landroidx/compose/ui/input/pointer/PointerType;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/input/pointer/PointerType;->Stylus:I
+
+    const/4 v0, 0x4
+
+    .line 252
+    invoke-static {v0}, Landroidx/compose/ui/input/pointer/PointerType;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/input/pointer/PointerType;->Eraser:I
+
+    return-void
+.end method
+
+.method public static final synthetic access$getEraser$cp()I
+    .locals 1
+
+    .line 226
+    sget v0, Landroidx/compose/ui/input/pointer/PointerType;->Eraser:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getMouse$cp()I
+    .locals 1
+
+    .line 226
+    sget v0, Landroidx/compose/ui/input/pointer/PointerType;->Mouse:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getStylus$cp()I
+    .locals 1
+
+    .line 226
+    sget v0, Landroidx/compose/ui/input/pointer/PointerType;->Stylus:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getTouch$cp()I
+    .locals 1
+
+    .line 226
+    sget v0, Landroidx/compose/ui/input/pointer/PointerType;->Touch:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getUnknown$cp()I
+    .locals 1
+
+    .line 226
+    sget v0, Landroidx/compose/ui/input/pointer/PointerType;->Unknown:I
+
+    return v0
+.end method
+
+.method private static constructor-impl(I)I
+    .locals 0
+
+    .line 0
+    return p0
+.end method
+
+.method public static final equals-impl0(II)Z
+    .locals 0
+
+    .line 0
+    if-ne p0, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static hashCode-impl(I)I
+    .locals 0
+
+    .line 0
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static toString-impl(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_3
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x4
+
+    if-eq p0, v0, :cond_0
+
+    .line 235
+    const-string p0, "Unknown"
+
+    goto :goto_0
+
+    .line 234
+    :cond_0
+    const-string p0, "Eraser"
+
+    goto :goto_0
+
+    .line 233
+    :cond_1
+    const-string p0, "Stylus"
+
+    goto :goto_0
+
+    .line 232
+    :cond_2
+    const-string p0, "Mouse"
+
+    goto :goto_0
+
+    .line 231
+    :cond_3
+    const-string p0, "Touch"
+
+    :goto_0
+    return-object p0
+.end method

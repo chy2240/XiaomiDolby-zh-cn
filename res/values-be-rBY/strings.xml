@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="actions_title">Дзеянне</string>
+    <string name="ambient_display_enable_summary">Улучаць экран пры атрыманні апавяшчэнняў</string>
+    <string name="ambient_display_enable_title">Індыкацыя падзей</string>
+    <string name="ambient_display_title">Індыкацыя падзей</string>
+    <string name="chop_chop_gesture_title">Уструс</string>
+    <string name="hand_wave_gesture_summary">Правядзіце далонню над экранам для прагляду апавяшчэнняў</string>
+    <string name="hand_wave_gesture_title">Узмах</string>
+    <string name="pocket_gesture_summary">Адлюстроўваць апавяшчэнні пры выманні прылады з кішэні</string>
+    <string name="pocket_gesture_title">Кішэнь</string>
+    <string name="proximity_wake_enable_summary">Правядзіце далонню над экранам, каб вывесці прыладу з рэжыму сну</string>
+    <string name="proximity_wake_enable_title">Улучэнне па датчыках</string>
+    <string name="proximity_wake_title">Улучэнне па датчыках</string>
+    <string name="screen_gestures_panel_title">Жэсты</string>
+    <string name="touchscreen_c_gesture_summary">Намалюй \"C\" для ўключэння камеры</string>
+    <string name="touchscreen_c_gesture_title">Камера</string>
+    <string name="touchscreen_e_gesture_summary">Намалюй \"e\" для адкрыцця дадатка пошты</string>
+    <string name="touchscreen_e_gesture_title">Электронная пошта</string>
+    <string name="touchscreen_s_gesture_summary">Намалюй \"S\" для адкрыцця дадатка паведамленняў</string>
+    <string name="touchscreen_s_gesture_title">Абмен паведамленнямі</string>
+    <string name="touchscreen_v_gesture_summary">Намалюй \"V\" для адкрыцця тэлефона</string>
+    <string name="touchscreen_v_gesture_title">Тэлефон</string>
+    <string name="touchscreen_w_gesture_summary">Намалюй \"W\" для адкрыцця браўзэра</string>
+    <string name="touchscreen_w_gesture_title">Аглядальнік</string>
+    <string name="touchscreen_z_gesture_summary">Намалюй «Z» для ўключэння ці выключэння ліхтарыка</string>
+    <string name="touchscreen_z_gesture_title">Ліхтарык</string>
+</resources>
